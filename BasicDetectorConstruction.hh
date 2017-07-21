@@ -6,6 +6,9 @@ class BasicDetectorConstruction : public G4VUserDetectorConstruction
 {
   public:
     G4VPhysicalVolume* Construct();
+    ~BasicDetectorConstruction(){
+
+    }
 };
 
 #endif

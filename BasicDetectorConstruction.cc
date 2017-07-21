@@ -4,11 +4,10 @@
 #include "G4PVPlacement.hh"
 #include "G4LogicalVolume.hh"
 #include "BasicDetectorConstruction.hh"
+using namespace CLHEP;
 
-class BasicDetectorConstruction : public G4VUserDetectorConstruction{
-public:
-	G4VPhysicalVolume* BasicDetectorConstruction::Construct()
-	{
+G4VPhysicalVolume* BasicDetectorConstruction::Construct()
+{
 		//Obtain pointer to NIST material manager
 		G4NistManager* nist = G4NistManager::Instance();
 
@@ -65,4 +64,3 @@ public:
 
 		return physWorld;
 	}
-};

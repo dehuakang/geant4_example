@@ -5,9 +5,9 @@ cmake_minimum_required(VERSION 2.6 FATAL_ERROR)
 project(basicProject)
 
 find_package(Geant4 REQUIRED)
-find_package(Geant4 REQUIRED)
 include(${Geant4_USE_FILE})
 
+SET(sources BasicPrimaryGeneratorAction.cc BasicDetectorConstruction.cc)
 
 #----------------------------------------------------------------------------
 # Add the executable, and link it to the Geant4 libraries
